@@ -3,6 +3,11 @@
 // Hours of Operation
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var seattleul = document.getElementById('seattle');
+var tokyoul = document.getElementById('tokyo');
+var dubaiul = document.getElementById('dubai');
+var parisul = document.getElementById('paris');
+var limaul = document.getElementById('lima');
+
 
 // Ceylin - object literals for each store
 var seattle = {
@@ -51,8 +56,8 @@ var seattle = {
 var tokyo = {
   name: 'Tokyo',
   minCust: 23,
-  maxCust: 65,
-  avgCookies: 6.3,
+  maxCust: 24,
+  avgCookies: 1.2,
   cookiesSoldPerHourArray: [],
   customersPerHourArray: [],
   dailyTotal: 0,
@@ -83,19 +88,19 @@ var tokyo = {
       //give it content
       li.textContent = `${hours[i]}: ${this.cookiesSoldPerHourArray[i]} cookies`;
       //Append to the Dom/parentElement
-      seattleul.appendChild(li);
+      tokyoul.appendChild(li);
     }
     li = document.createElement('li');
     li.textContent = `Total: ${this.dailyTotal} cookies`;
-    seattleul.appendChild(li);
+    tokyoul.appendChild(li);
   }
 };
 
-var seattle = {
-  name: 'Seattle',
-  minCust: 23,
-  maxCust: 65,
-  avgCookies: 6.3,
+var dubai = {
+  name: 'Dubai',
+  minCust: 11,
+  maxCust: 38,
+  avgCookies: 3.7,
   cookiesSoldPerHourArray: [],
   customersPerHourArray: [],
   dailyTotal: 0,
@@ -126,19 +131,19 @@ var seattle = {
       //give it content
       li.textContent = `${hours[i]}: ${this.cookiesSoldPerHourArray[i]} cookies`;
       //Append to the Dom/parentElement
-      seattleul.appendChild(li);
+      dubaiul.appendChild(li);
     }
     li = document.createElement('li');
     li.textContent = `Total: ${this.dailyTotal} cookies`;
-    seattleul.appendChild(li);
+    dubaiul.appendChild(li);
   }
 };
 
-var seattle = {
-  name: 'Seattle',
-  minCust: 23,
-  maxCust: 65,
-  avgCookies: 6.3,
+var paris = {
+  name: 'Paris',
+  minCust: 20,
+  maxCust: 38,
+  avgCookies: 2.3,
   cookiesSoldPerHourArray: [],
   customersPerHourArray: [],
   dailyTotal: 0,
@@ -169,19 +174,19 @@ var seattle = {
       //give it content
       li.textContent = `${hours[i]}: ${this.cookiesSoldPerHourArray[i]} cookies`;
       //Append to the Dom/parentElement
-      seattleul.appendChild(li);
+      parisul.appendChild(li);
     }
     li = document.createElement('li');
     li.textContent = `Total: ${this.dailyTotal} cookies`;
-    seattleul.appendChild(li);
+    parisul.appendChild(li);
   }
 };
 
-var seattle = {
-  name: 'Seattle',
-  minCust: 23,
-  maxCust: 65,
-  avgCookies: 6.3,
+var lima = {
+  name: 'Lima',
+  minCust: 2,
+  maxCust: 16,
+  avgCookies: 4.6,
   cookiesSoldPerHourArray: [],
   customersPerHourArray: [],
   dailyTotal: 0,
@@ -212,16 +217,16 @@ var seattle = {
       //give it content
       li.textContent = `${hours[i]}: ${this.cookiesSoldPerHourArray[i]} cookies`;
       //Append to the Dom/parentElement
-      seattleul.appendChild(li);
+      limaul.appendChild(li);
     }
     li = document.createElement('li');
     li.textContent = `Total: ${this.dailyTotal} cookies`;
-    seattleul.appendChild(li);
+    limaul.appendChild(li);
   }
 };
 
 seattle.render();
 tokyo.render();
-dubai.render():
+dubai.render();
 paris.render();
 lima.render();
