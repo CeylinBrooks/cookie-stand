@@ -230,3 +230,5 @@ tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
+
+var table = document.createElement('Cookies')
