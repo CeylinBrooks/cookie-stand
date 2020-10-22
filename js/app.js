@@ -48,20 +48,20 @@ function Store(name, minCust, maxCust, avgCookies) {
   };
 }
 
-function renderHeader(){
+function renderHeader() {
   var tr = document.createElement('tr');
-    var td = document.createElement('td');
-    td.textContent = '';
+  var td = document.createElement('td');
+  td.textContent = '';
+  tr.appendChild(td);
+  for (var i = 0; i < hours.length; i++) {
+    td = document.createElement('td');
+    td.textContent = hours[i];
     tr.appendChild(td);
-    for (var i = 0; i < hours.length; i++) {
-      td = document.createElement('td');
-      td.textContent = hours[i];
-      tr.appendChild(td);
-    }
-    var td = document.createElement('td');
-    td.textContent = 'Total';
-    tr.appendChild(td);
-    cookieTable.appendChild(tr);
+  }
+  var td = document.createElement('td');
+  td.textContent = 'Total';
+  tr.appendChild(td);
+  cookieTable.appendChild(tr);
 }
 
 
