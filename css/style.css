@@ -3,9 +3,22 @@
   background-color: bisque;
 }
 
+h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+
 table {
-  border: black;
+  border: 1px solid black;
   margin: 20px;
   padding: 20px;
 
 }
+
+td, th {
+  border: 1px solid black;
+  padding: 20px;
+
+}
+
