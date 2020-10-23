@@ -27,6 +27,7 @@ function Store(name, minCust, maxCust, avgCookies) {
       this.cookiesSoldPerHourArray.push(cookiesPerHour);
       this.dailyTotal += cookiesPerHour;
 
+
     }
   };
 
@@ -57,6 +58,7 @@ function renderHeader() {
     td = document.createElement('td');
     td.textContent = hours[i];
     tr.appendChild(td);
+
   }
   td = document.createElement('td');
   td.textContent = 'Total';
@@ -79,5 +81,3 @@ function renderAllStores() {
 
 renderHeader();
 renderAllStores();
-
-
