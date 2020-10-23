@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Hours of Operation
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
@@ -41,7 +41,7 @@ function Store(name, minCust, maxCust, avgCookies) {
       td.textContent = this.cookiesSoldPerHourArray[i];
       tr.appendChild(td);
     }
-    var td = document.createElement('td');
+    td = document.createElement('td');
     td.textContent = this.dailyTotal;
     tr.appendChild(td);
     cookieTable.appendChild(tr);
@@ -58,7 +58,7 @@ function renderHeader() {
     td.textContent = hours[i];
     tr.appendChild(td);
   }
-  var td = document.createElement('td');
+  td = document.createElement('td');
   td.textContent = 'Total';
   tr.appendChild(td);
   cookieTable.appendChild(tr);
@@ -79,6 +79,5 @@ function renderAllStores() {
 
 renderHeader();
 renderAllStores();
-
 
 
