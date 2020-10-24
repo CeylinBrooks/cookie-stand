@@ -1,6 +1,7 @@
 
 * {
   background-color: bisque;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -19,15 +20,20 @@ header {
   border: 1px solid black;
   margin: 20px;
   padding: 20px;
-
+  font-family:  'Open Sans Condensed', sans-serif;
 
 }
 
 td, th, tr {
   border: 1px solid black;
-  padding: 80px;
+  padding: 20px;
+  background-color: rgb(184, 225, 226);
 
 }
+
+/* :hover {
+color: cadetblue;
+} */
 
 footer{
   text-align: center;
