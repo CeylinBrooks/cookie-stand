@@ -17,44 +17,55 @@ header {
 }
 
 header img{
-  image-rendering: auto;
+  /* image-rendering: auto; */
   padding: 50px;
   text-align: center;
+}
+
+header a {
+  display: block;
 }
 
 main{
   image-rendering: crisp-edges;
 }
 
+h2 {
+  color: blue;
+  text-align: center;
+
+}
+
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
-  /* text-decoration-color: crimson; */
+  text-decoration-color: crimson;
 }
 
 
-li{
+ul ,li{
   font: medium;
   text-align: center;
+}
 
-#cookie-table {
-  border: 1px solid black;
+#cookie-table, td, th, tr  {
+  border: solid black;
+  border: 1px solid rgb(51, 48, 48);
   margin: 20px;
   padding: 20px;
   font-family:  'Open Sans Condensed', sans-serif;
-
-}
-
-td, th, tr {
-  border: 1px solid black;
+  border-radius: 10px;
   padding: 20px;
-  background-color: rgb(184, 225, 226);
-
+  background-color: rgb(229, 184, 153);
 }
 
-/* :hover {
-color: cadetblue;
-} */
+main img {
+  margin: 10px;
+}
+
+td:hover {
+color: rgb(166, 182, 233);
+}
 
 footer{
   text-align: center;

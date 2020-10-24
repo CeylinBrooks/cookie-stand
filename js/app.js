@@ -8,6 +8,7 @@ var allStores = [];
 
 //Constructor!!
 
+
 function Store(name, minCust, maxCust, avgCookies) {
   this.name = name;
   this.minCust = minCust;
@@ -37,6 +38,8 @@ function Store(name, minCust, maxCust, avgCookies) {
     var td = document.createElement('td');
     td.textContent = this.name;
     tr.appendChild(td);
+
+
     for (var i = 0; i < hours.length; i++) {
       td = document.createElement('td');
       td.textContent = this.cookiesSoldPerHourArray[i];
@@ -49,6 +52,7 @@ function Store(name, minCust, maxCust, avgCookies) {
   };
 }
 
+
 function renderHeader() {
   var tr = document.createElement('tr');
   var td = document.createElement('td');
@@ -60,12 +64,13 @@ function renderHeader() {
     tr.appendChild(td);
 
   }
+
+
   td = document.createElement('td');
   td.textContent = 'Total';
   tr.appendChild(td);
   cookieTable.appendChild(tr);
 }
-
 
 var seattle = new Store('Seattle', 23, 65, 6.3);
 var tokyo = new Store('Tokyo', 3, 24, 1.2);
