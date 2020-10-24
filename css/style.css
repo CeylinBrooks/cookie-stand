@@ -13,8 +13,28 @@ h1 {
 
 header {
   text-align: center;
+  padding: 10px;
 }
 
+header img{
+  image-rendering: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+main{
+  image-rendering: crisp-edges;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  /* text-decoration-color: crimson; */
+}
+
+li{
+  font: medium;
+  text-align: center;
 
 #cookie-table {
   border: 1px solid black;
