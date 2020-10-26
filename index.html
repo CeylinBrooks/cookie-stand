@@ -44,15 +44,26 @@
 
       </figure> -->
 
-      <form id="container"></form>
+      <form id="container">
       <fieldset>
         <legend>Place your order!</legend>
 
         <label for= "amount"> How many cookies do you want?</label>
         <input type="text" quanity="amount">
 
-        <labe
+        <label for="preference">Pick up or Delivery?</label>
+        <select name="preference">
+          <option value="pickup">Pick-Up</option>
+          <option value="delayed">Delayed Pick-Up</option>
+          <option value="deliver">Delivery</option>  
+        </select>
+        <label for="time">Morning, Afternoon or Evening?
+        <input type="text" time="word">
+      </label>
+      <button type="submit"> Order!</button>
+
       </fieldset>
+    </form>
 
 
       <img src="img/frosted-cookie.jpg" alt="Yummy Cookie!">
