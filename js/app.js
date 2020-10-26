@@ -56,7 +56,7 @@ function Store(name, minCust, maxCust, avgCookies) {
 function renderHeader() {
   var tr = document.createElement('tr');
   var td = document.createElement('td');
-  td.textContent = '';
+  td.textContent = 'Store';
   tr.appendChild(td);
   for (var i = 0; i < hours.length; i++) {
     td = document.createElement('td');
@@ -65,12 +65,23 @@ function renderHeader() {
 
   }
 
-
   td = document.createElement('td');
   td.textContent = 'Total';
   tr.appendChild(td);
   cookieTable.appendChild(tr);
+
 }
+
+// function renderFooter() {
+//   var tr = document.createElement('tr');
+//   var td = document.createElement('td');
+//   td.textContent = '';
+//   tr.appendChild(td);
+//   for (var i = 0; i < hours.length; i++) {
+//     td = document.createElement('td');
+//     td.textContent = hours[i];
+//     tr.appendChild(td);
+// }
 
 var seattle = new Store('Seattle', 23, 65, 6.3);
 var tokyo = new Store('Tokyo', 3, 24, 1.2);
@@ -86,3 +97,9 @@ function renderAllStores() {
 
 renderHeader();
 renderAllStores();
+renderFooter();
+
+// function handleClick(event){
+
+// }
+// myContainer.addEventListener('click', handleClick);
