@@ -7,8 +7,6 @@ console.log('cookie-table');
 var allStores = [];
 
 //Constructor!!
-
-
 function Store(name, minCust, maxCust, avgCookies) {
   this.name = name;
   this.minCust = minCust;
@@ -16,6 +14,9 @@ function Store(name, minCust, maxCust, avgCookies) {
   this.avgCookies = avgCookies;
   this.cookiesSoldPerHourArray = [];
   this.dailyTotal = 0;
+
+  // Store Prototype Methods
+
   allStores.push(this);
   this.getCust = function () {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
@@ -56,7 +57,7 @@ function Store(name, minCust, maxCust, avgCookies) {
 function renderHeader() {
   var tr = document.createElement('tr');
   var td = document.createElement('td');
-  td.textContent = 'Store';
+  td.textContent = 'Stores';
   tr.appendChild(td);
   for (var i = 0; i < hours.length; i++) {
     td = document.createElement('td');
@@ -72,16 +73,36 @@ function renderHeader() {
 
 }
 
-// function renderFooter() {
-//   var tr = document.createElement('tr');
-//   var td = document.createElement('td');
-//   td.textContent = '';
+function renderFooter() {
+  var tfoot = document.createElement('tfoot');
+  cookieTable.appendChild(tfoot);
+  var tr = document.createElement('tr');
+  tr.appendChild(tr);
+
+  renderElement('th', 'Totals'.tr);
+  for (var i = 0; i < footerTotalsArray[i]; i++) {
+    renderElement('th', footerTotalsArray[i], tr);
+  }
+  renderElement('th', grandTotal, tr);
+}
+
+function calcFooterTotals() {
+  for (var i = 0; i < hours.length; i++) {
+    var eachHourTotal = 0;
+    for (var j = 0; j < allStores.length; j++) {
+      eachHourTotal += allStores[j].hourlySalesArray[i];
+    }
+    footerTotalsArray.push(eachHourTotal);
+    grandTotal += eachHourTotal;
+  }
+}
+
+
+// for (var i = 0; i < hours.length; i++) {
+//   td = document.createElement('td');
+//   td.textContent = hours[i];
 //   tr.appendChild(td);
-//   for (var i = 0; i < hours.length; i++) {
-//     td = document.createElement('td');
-//     td.textContent = hours[i];
-//     tr.appendChild(td);
-// }
+
 
 var seattle = new Store('Seattle', 23, 65, 6.3);
 var tokyo = new Store('Tokyo', 3, 24, 1.2);

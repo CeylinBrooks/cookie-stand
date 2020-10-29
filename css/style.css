@@ -33,6 +33,7 @@ main{
 h2 {
   color: blue;
   text-align: center;
+  font-size: xx-large;
 
 }
 
@@ -44,8 +45,12 @@ p {
 
 
 ul ,li{
-  font: medium;
+  font-size: xx-large;
   text-align: center;
+}
+
+nav{
+  font-size: xx-large;
 }
 
 fieldset {
@@ -56,12 +61,14 @@ fieldset {
 #cookie-table, td, th, tr  {
   border: solid black;
   border: 1px solid rgb(51, 48, 48);
-  margin: 20px;
+  margin: auto;
+  margin-left: 175px;
   padding: 20px;
   font-family:  'Open Sans Condensed', sans-serif;
   border-radius: 10px;
   padding: 20px;
   background-color: rgb(229, 184, 153);
+  ;
 }
 
 main img {
